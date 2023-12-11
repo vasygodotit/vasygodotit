@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfr45jywfudkb"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_r08rt"]
+
+[node name="zagotovka" type="CanvasLayer"]
+script = ExtResource("1_r08rt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "вы открыли книгу, она написана на латыни,
+но вам повезло, вы знаете её, девушка просит вас пройти в зал с картинами повторяя 5 строку на 23 странице без остановки, 
+а когда подойдёте к картине борона поджечь её, 
+и прочитать 8 заклинание на 88 странцие, это должно убить барона и всех призраков так или иначе связанных с ним"
+
+[node name="3 ending" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "сделать в точности так как говорит девушка"
+
+[connection signal="pressed" from="VBoxContainer/3 ending" to="." method="_on__ending_pressed"]

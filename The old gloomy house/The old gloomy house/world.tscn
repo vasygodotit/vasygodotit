@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://lmno7cgjr1ig"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_14cjg"]
+
+[node name="world" type="CanvasLayer"]
+script = ExtResource("1_14cjg")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -56.5
+offset_bottom = 56.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "        Старый мрачный дом
+       Вы  путешественник  который нашел старый дом на окраине города, 
+у вас неописуемое желание войти в него, но разум подсказывает что не надо это делать"
+
+[node name="house" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "(Войти в Старый мрачный дом"
+
+[node name="Get out of here" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Уйти отсюда"
+
+[connection signal="resized" from="MarginContainer/VBoxContainer/Label" to="." method="_on_label_resized"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/house" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/house" to="." method="_on_войти_в_старый_мрачный_дом_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/house" to="." method="_on_house_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Get out of here" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Get out of here" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Get out of here" to="." method="_on_get_out_of_here_pressed"]

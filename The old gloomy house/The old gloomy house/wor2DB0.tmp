@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://lmno7cgjr1ig"]
+
+[ext_resource type="Script" path="res://Blanks/Blanks.gd" id="1_kta07"]
+
+[node name="Blanks" type="CanvasLayer"]
+script = ExtResource("1_kta07")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Старый мрачный дом
+
+Вы путешественник который нашел старый дом на окраине города, у вас неописуемое желание войти в него, но разум подсказывает что не надо это делать"
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "(Войти в Старый мрачный дом"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

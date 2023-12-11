@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://1y8ijq7vjqkc"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_s2rpq"]
+
+[node name="workpiece" type="CanvasLayer"]
+script = ExtResource("1_s2rpq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -531.5
+offset_top = -26.0
+offset_right = 531.5
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Вы поддались своим желаниям и решили войти в старый мрачный дом,
+ дверь была не запертой, войдя внутрь вы увидели что повсюду много пыли, но горят свечи, все как новые, это вас насторожило."
+
+[node name="Go to the hall" type="Button" parent="VBoxContainer/Label"]
+layout_mode = 2
+offset_left = -9.5
+offset_top = 94.0
+offset_right = 1053.5
+offset_bottom = 125.0
+text = "Пройти в зал"
+
+[node name="medallion" type="Button" parent="VBoxContainer/Label"]
+layout_mode = 2
+offset_left = -1.5
+offset_top = 131.0
+offset_right = 1061.5
+offset_bottom = 162.0
+text = "Пройти в комнату из которой исходит странное свечение синего цвета"
+
+[node name="Go to the kitchen" type="Button" parent="VBoxContainer/Label"]
+layout_mode = 2
+offset_top = 56.0
+offset_right = 1063.0
+offset_bottom = 87.0
+text = "Пройти на кухню"
+
+[connection signal="pressed" from="VBoxContainer/Label/Go to the hall" to="." method="_on_go_to_the_hall_pressed"]
+[connection signal="pressed" from="VBoxContainer/Label/medallion" to="." method="_on_room_pressed"]
+[connection signal="pressed" from="VBoxContainer/Label/medallion" to="." method="_on_medallion_pressed"]
+[connection signal="pressed" from="VBoxContainer/Label/Go to the kitchen" to="." method="_on_go_to_the_kitchen_pressed"]

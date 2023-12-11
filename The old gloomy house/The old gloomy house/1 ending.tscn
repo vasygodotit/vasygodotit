@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://dftohix3l7sct"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_anojw"]
+
+[node name="1 ending" type="CanvasLayer"]
+script = ExtResource("1_anojw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Вы ушли от этого странного места и в всё что могло произойти обошло вас стороной.
+ 1 концовка"
+
+[node name="come back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "вернуться назад,"
+
+[connection signal="pressed" from="VBoxContainer/come back" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/come back" to="." method="_on_come_back_pressed"]

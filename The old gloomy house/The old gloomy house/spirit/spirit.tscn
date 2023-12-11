@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://28ahmawaumvf"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_87opd"]
+
+[node name="workpiece" type="CanvasLayer"]
+script = ExtResource("1_87opd")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -621.0
+offset_top = -203.0
+offset_right = 1132.0
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "она рассказала вам историю этого дома, и его хозяиона,
+ он оказался бароном который нашёл старую книгу чёрной магии и через долгие годы тренеровок достиг немалых успехов в чёрной магии,
+ когда он начал чувствовать что силы покидают его и возраст скоро возьмёт своё, 
+он собрал всех своих слуг в одном месте и с помощью чёрной магии заключил их в картины чтобы питаться жизненой силой слуг,
+но не стоит играть с чёрной магией, он сам превратился в духа заключённого в картину, и чтобы жизненые силы слуг не кончились 
+и он не остался без питания он должен постоянно пополнять список своих слуг,
+сама она представилась его дочерью которая поняла замысел отца,
+ украла у нго книгу и заключила свою душу в амулете, свечение которого отпугивает духов, книгу она спрятала в тумбе под амулетом"
+
+[node name="cabinet" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -889.0
+offset_top = 23.0
+offset_right = 864.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "поверить ей и открыть тумбу"
+
+[connection signal="pressed" from="cabinet" to="." method="_on_house_pressed"]
+[connection signal="pressed" from="cabinet" to="." method="_on_cabinet_pressed"]

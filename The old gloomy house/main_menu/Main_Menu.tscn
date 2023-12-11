@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8ticxorx48g0"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_8ypt4"]
+
+[node name="Body" type="CanvasLayer"]
+script = ExtResource("1_8ypt4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -23.5
+offset_right = 20.0
+offset_bottom = 23.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Start_the_game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Начать игру"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Выход"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 442.0
+offset_top = 74.0
+offset_right = 995.0
+offset_bottom = 256.0
+text = "Название:
+Старый мрачный дом
+Авторы:SKIF
+Описание:
+Вы путешественник который нашел старый дом на окраине города
+Жанр:
+Интерактивная литература"
+
+[node name="LinkButton" type="LinkButton" parent="."]
+offset_left = 463.0
+offset_top = 271.0
+offset_right = 851.0
+offset_bottom = 307.0
+text = "Перейти на страницу автора игры"
+uri = "https://apero.ru/%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B8%D0%B3%D1%80%D1%8B/%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D0%B9-%D0%BC%D1%80%D0%B0%D1%87%D0%BD%D1%8B%D0%B9-%D0%B4%D0%BE%D0%BC"
+
+[connection signal="pressed" from="VBoxContainer/Start_the_game" to="." method="_on_start_the_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

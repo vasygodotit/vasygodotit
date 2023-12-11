@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1x8k7fg12t47"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_pfrn5"]
+
+[node name="workpiece" type="CanvasLayer"]
+script = ExtResource("1_pfrn5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "как только вы подошли к ней ваше зрение начало приходить в норму,
+ но вы чувствуете что кто-то стоит рядом, вы оборачиваетесь,
+ и видите перед собой барона котой своим мечом прокалывает вам живот,
+ вы падаете без сил,
+ увы но вы пополнили список слуг барона и стали одной из его картин, одним из послушных рабов мёртвого барона.....
+ 2 концовка"
+
+[node name="world" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "вернуться,"
+
+[connection signal="pressed" from="VBoxContainer/world" to="." method="_on_house_pressed"]
+[connection signal="pressed" from="VBoxContainer/world" to="." method="_on_world_pressed"]

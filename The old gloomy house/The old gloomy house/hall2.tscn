@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://2b1ew7i5xj4e"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_xb6hd"]
+
+[node name="workpiece" type="CanvasLayer"]
+script = ExtResource("1_xb6hd")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "вы прошли в конец зала и увидели портрет красивого барона,
+ судя по всему жившего в этом доме, но внезапно картина посмотрела на вас"
+
+[node name="runhall" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "броситься бежать обратно к выходу сломя голову"
+
+[node name="lamppainting" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "схватить масленую лампу стоящую рядом и кинуть в картину"
+
+[connection signal="pressed" from="VBoxContainer/runhall" to="." method="_on_runhall_pressed"]
+[connection signal="pressed" from="VBoxContainer/lamppainting" to="." method="_on_lamppainting_pressed"]

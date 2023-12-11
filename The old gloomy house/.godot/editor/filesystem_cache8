@@ -1,0 +1,33 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1702295773
+icon.svg::CompressedTexture2D::3619991891554837949::1702293335::1702293350::1::::<><>::
+node_2d.tscn::PackedScene::1873109763258716021::1702294233::0::1::::<><>::
+::res://main_menu/::1702295740
+Main_Menu.tscn::PackedScene::7128786922766979297::1702295740::0::1::::<><>::res://skript/Body.gd
+::res://new folder/::1702295773
+0.tscn::PackedScene::369089955044412727::1702295773::0::1::::<><>::uid://cxsnakp4tmker::::res://new folder/11.12.2023.png
+11.12.2023.png::CompressedTexture2D::6425133441289055665::1702295441::1702295773::1::::<><>::
+::res://skript/::1702293445
+Body.gd::GDScript::-1::1702293445::0::1::::<>CanvasLayer<>::
+::res://spirit/::1702295162
+3 ending.tscn::PackedScene::1307046825748623964::1702232414::0::1::::<><>::res://skript/Body.gd
+cabinet.tscn::PackedScene::2886718686833634247::1702232414::0::1::::<><>::res://skript/Body.gd
+medallion.tscn::PackedScene::3431436145186239327::1702225505::0::1::::<><>::res://skript/Body.gd
+open_the_book.tscn::PackedScene::2774274201102161681::1702232414::0::1::::<><>::res://skript/Body.gd
+spirit.tscn::PackedScene::1963236375948762975::1702225723::0::1::::<><>::res://skript/Body.gd
+::res://The old gloomy house/::1702295102
+1 ending.tscn::PackedScene::7550292442058138511::1702293436::0::1::::<><>::res://skript/Body.gd
+door.tscn::PackedScene::4260834514105328318::1702295033::0::1::::<><>::res://skript/Body.gd
+hall2.tscn::PackedScene::1898750146320415130::1702295034::0::1::::<><>::res://skript/Body.gd
+hall.tscn::PackedScene::4861890617337315035::1702295034::0::1::::<><>::res://skript/Body.gd
+house.tscn::PackedScene::1876473446708200238::1702293436::0::1::::<><>::res://skript/Body.gd
+kitchen.tscn::PackedScene::6668274334093226570::1702293436::0::1::::<><>::res://skript/Body.gd
+lamppainting.tscn::PackedScene::480836239884952077::1702293436::0::1::::<><>::res://skript/Body.gd
+runhall.tscn::PackedScene::371295743772641394::1702293436::0::1::::<><>::res://skript/Body.gd
+world.tscn::PackedScene::797665819209857622::1702293436::0::1::::<><>::res://skript/Body.gd
+::res://The old gloomy house/spirit/::1702295136
+3 ending.tscn::PackedScene::1307046825748623964::1702295136::0::1::::<><>::res://skript/Body.gd
+cabinet.tscn::PackedScene::2886718686833634247::1702295136::0::1::::<><>::res://skript/Body.gd
+medallion.tscn::PackedScene::3431436145186239327::1702295136::0::1::::<><>::res://skript/Body.gd
+open_the_book.tscn::PackedScene::2774274201102161681::1702295136::0::1::::<><>::res://skript/Body.gd
+spirit.tscn::PackedScene::1963236375948762975::1702295136::0::1::::<><>::res://skript/Body.gd

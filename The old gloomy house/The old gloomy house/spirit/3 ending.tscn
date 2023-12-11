@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://sve4uavj8gee"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_wug8k"]
+
+[node name="3 ending" type="CanvasLayer"]
+script = ExtResource("1_wug8k")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "вы делаете всё в точности так как говорит девушка, после того как вы подожгли картину барона он вылетел из неё горящий и злой,
+ но прочитав заклинание вы видите как его дух взорвался откинув вас,
+ вы ударевшись об стену теряете сознание, приходя в себя вы видите что картин больше нету, 
+вы хватаете книгу и бежите в комнату рассказать девушке что всё получиолось, но всё что вы видите это разбитый медальон,
+ вы пониматете что она тоже умерла потому что была дочерью барона и была напрямую связана с ним, вы решаете поджчеь книгу, 
+как только она начинает гореть дом начинает падать,
+но вы успеваете выбежать из него, вы некогда не сможете забыть то что произошло в этот день.... 3 концовка"
+
+[node name="a new game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Новая игра"
+
+[connection signal="pressed" from="VBoxContainer/a new game" to="." method="_on_a_new_game_pressed"]

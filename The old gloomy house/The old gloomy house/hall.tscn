@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbjevmejllde6"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_4gxpa"]
+
+[node name="workpiece" type="CanvasLayer"]
+script = ExtResource("1_4gxpa")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "вы прошли в зал и увидели много картин по бокам,
+все люди изображённые на них смотрели в самый далний конец зала"
+
+[node name="hall2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "пройти в конец зала"
+
+[connection signal="pressed" from="VBoxContainer/hall2" to="." method="_on_hall_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/hall2" to="." method="_on_lamppainting_pressed"]
+[connection signal="pressed" from="VBoxContainer/hall2" to="." method="_on_go_to_the_end_of_the_hall_pressed"]

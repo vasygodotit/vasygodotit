@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://fj4gl1hb336u"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_ct0po"]
+
+[node name="workpiece" type="CanvasLayer"]
+script = ExtResource("1_ct0po")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Персонажи картин превратились в духов и полетели за вами по приказу барона, 
+один из духов проколол вам ногу ножом но вам удалось отбиться от него, 
+но вы начинаете все хуже и хуже видеть...."
+
+[node name="door" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Вы видите свет двери и решили подойти к ней"
+
+[connection signal="pressed" from="VBoxContainer/door" to="." method="_on_door_pressed"]
